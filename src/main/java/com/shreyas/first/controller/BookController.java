@@ -25,9 +25,10 @@ public class BookController {
     BookServiceImpl bookServiceImpl;
 
     
-    @PostMapping("/")
+    @PostMapping("/add")
     public void addBook(@RequestBody Book book){
         bookServiceImpl.addBook(book);
+        System.out.println(book);
     }
 
     @GetMapping("/findAll")

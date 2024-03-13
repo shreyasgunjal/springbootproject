@@ -33,9 +33,23 @@ public class Book {
     public String getTitle() {
         return title;
     }
+
+    
+    @Override
+    public String toString() {
+        return "Book [id=" + id + ", name=" + name + ", title=" + title + "]";
+    }
+
+
     public void setTitle(String title) {
         this.title = title;
     }
+
+
+    
+
+
+    
 
 
 }
